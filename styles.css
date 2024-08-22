@@ -1,0 +1,13 @@
+section {
+    border: 1px solid #000;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+input {
+    display: block;
+}

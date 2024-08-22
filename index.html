@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Propuesto #3, Corte II</title>
+</head>
+
+<body>
+    <section id="mainForm">
+        <h1>TALLER CLOUD IDE's</h1>
+        <table id="mainForm_tabla">
+            <tr>
+                <th>Cédula</th>
+                <th>Tipo de Participante</th>
+                <th>Edad</th>
+                <th>Monto a Pagar</th>
+            </tr>
+        </table>
+        <h3>Tipo de participante más cuantioso: <span id="mainForm_lblTipoFrecuente">¿?</span>.</h3>
+        <h3>Total recabado: <span id="mainForm_lblMontoTotal">¿?</span>$</h3>
+        <h3>Impuesto que pagan los organizadores del taller: <span id="mainForm_lblImpuesto">¿?</span>$</h3>
+        <button id="mainForm_btAgregar">Agregar Participante</button>
+    </section>
+
+    <section id="participanteForm">
+        <h3>Datos del Participante</h3>
+        <input type="text" id="participanteForm_inCedula" placeholder="Cédula">
+        <input type="text" id="participanteForm_inTipo" placeholder="Tipo de Participante">
+        <input type="text" id="participanteForm_inEdad" placeholder="Edad">
+        <button id="participanteForm_btAceptar">Aceptar</button>
+    </section>
+</body>
+<script type="module">
+    import Cl_controlador from "./JS/Cl_Controlador.js";
+    new Cl_controlador();
+</script>
+
+</html>
